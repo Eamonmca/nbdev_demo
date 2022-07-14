@@ -44,8 +44,9 @@ nb_path: "01_core.ipynb"
 </blockquote>
 <p>Represents a medical imaging single 3D volume.</p>
 <p>Attributes:
-    title: str represnting name of volume
-    dcm_series: series of dcm files containing volume</p>
+    title: str represnting name of volume</p>
+
+<pre><code>dcm_series: series of dcm files containing volume</code></pre>
 
 </div>
 
@@ -75,13 +76,33 @@ nb_path: "01_core.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="Scan.write_nifti" class="doc_header"><code>Scan.write_nifti</code><a href="nbdev_demo/core.py#L37" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Scan.write_nifti</code>(<strong><code>output_path</code></strong>)</p>
+<h4 id="Scan.write_nifti" class="doc_header"><code>Scan.write_nifti</code><a href="nbdev_demo/core.py#L38" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Scan.write_nifti</code>(<strong><code>output_path</code></strong>)</p>
 </blockquote>
 <p><strong>Writes a Nfiti file of 3D volume to a specified output path.</strong></p>
 <p>Args:
     output_path (<em>path</em> or <em>str</em>): <em>Desired output path of Nifti file</em></p>
 <p>Returns:
     <em>path</em>: <em>Path to which the Nifti file has been written</em></p>
+
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="Scan.display_3D_volume" class="doc_header"><code>Scan.display_3D_volume</code><a href="nbdev_demo/core.py#L54" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>Scan.display_3D_volume</code>(<strong><code>fig</code></strong>=<em><code>False</code></em>)</p>
+</blockquote>
+<p><strong>Disolay a 2D representation of the 3D volume</strong></p>
+
+<pre><code>Args:
+fig (bool, optional): _description. toggle show in place
+or fig object. Defaults to False._
+
+</code></pre>
+<p>Returns:
+    <em>fig</em>: Figure</p>
 
 </div>
 

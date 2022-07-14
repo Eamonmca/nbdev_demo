@@ -3,9 +3,11 @@
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"HelloSayer": "00_core.ipynb",
-         "Scan": "01_core.ipynb"}
+         "Scan": "01_core.ipynb",
+         "is_notebook": "02_core.ipynb"}
 
-modules = ["core.py"]
+modules = ["core.py",
+           "utils.py"]
 
 doc_url = "https://Eamonmca.github.io/nbdev_demo/"
 
