@@ -52,15 +52,6 @@ class Scan:
         return output_path
 
     def display_3D_volume(self, fig=False):
-        """ **Disolay a 2D representation of the 3D volume**
-
-            Args:
-            fig (bool, optional): _description. toggle show in place
-            or fig object. Defaults to False._
-
-        Returns:
-            _fig_: Figure
-        """
 
         if utils.is_notebook:
             pio.renderers.default = 'notebook_connected'
