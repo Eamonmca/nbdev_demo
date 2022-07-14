@@ -18,6 +18,7 @@ class Scan:
 
     Attributes:
         title: str
+        dcm_series: series of dcm files containing volume
     """
 
     def __init__(self, title, dcm_series):
