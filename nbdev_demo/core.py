@@ -35,6 +35,15 @@ class Scan:
         return self.__class__.__name__
 
     def write_nifti(self, output_path):
+        """Writes a Nfiti file of 3D volume to a specified output path.
+
+        Args:
+            output_path (path): Nifti output path
+
+        Returns:
+            _path_: Nifti output path
+        """
+
         nifti_file = nibabel.Nifti1Image(self.vol, self.affine)
         output_path = f"{output_path}/{self.title}.nii.gz"
         nibabel.save(nifti_file, output_path)
