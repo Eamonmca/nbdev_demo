@@ -17,7 +17,7 @@ class Scan:
     """Represents a medical imaging single 3D volume.
 
     Attributes:
-        title: str
+        title: str represnting name of volume
         dcm_series: series of dcm files containing volume
     """
 
