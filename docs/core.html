@@ -32,44 +32,64 @@ nb_path: "01_core.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h2 id="Scan" class="doc_header"><code>class</code> <code>Scan</code><a href="nbdev_demo/core.py#L16" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>Scan</code>(<strong><code>title</code></strong>, <strong><code>dcm_series</code></strong>)</p>
+</blockquote>
+<p>Represents a medical imaging single 3D volume.</p>
+<p>Attributes:
+    title: str</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Scan</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Represents a medical imaging single 3D volume:</span>
-<span class="sd">    </span>
-<span class="sd">    Attributes:</span>
-<span class="sd">        title: str of the volume identifier e.g &quot;LUNG&quot;</span>
-<span class="sd">        dcm_series: a series of DCM files representing the volume</span>
-<span class="sd">        vol: the three dimensional array </span>
-<span class="sd">        pix_dim: The pixel dimensions of the volume</span>
-<span class="sd">        affine: the affine of the volume</span>
-<span class="sd"> </span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">dcm_series</span><span class="p">):</span>
-        <span class="n">vol</span><span class="p">,</span> <span class="n">pix_dim</span><span class="p">,</span> <span class="n">affine</span> <span class="o">=</span> <span class="n">dicom_to_volume</span><span class="p">(</span><span class="n">dcm_series</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">title</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">dcm_series</span> <span class="o">=</span> <span class="n">dcm_series</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">vol</span> <span class="o">=</span> <span class="n">vol</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">pix_dim</span> <span class="o">=</span> <span class="n">pix_dim</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">affine</span> <span class="o">=</span> <span class="n">affine</span>
-        
-    
-    
-    <span class="k">def</span> <span class="nf">getName</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span>
-         
-    <span class="k">def</span> <span class="nf">write_nifti</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">output_path</span><span class="p">):</span>
-        <span class="n">nifti_file</span> <span class="o">=</span> <span class="n">nibabel</span><span class="o">.</span><span class="n">Nifti1Image</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">vol</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">affine</span><span class="p">)</span>
-        <span class="n">output_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="si">}</span><span class="s2">.nii.gz&quot;</span>
-        <span class="n">nibabel</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">nifti_file</span><span class="p">,</span> <span class="n">output_path</span><span class="p">)</span>
-    
-        <span class="k">return</span> <span class="n">output_path</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">nbdev.export</span> <span class="kn">import</span> <span class="n">notebook2script</span><span class="p">;</span> <span class="n">notebook2script</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Converted 00_core.ipynb.
+Converted 01_core.ipynb.
+Converted index.ipynb.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

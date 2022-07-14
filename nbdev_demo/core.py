@@ -14,15 +14,10 @@ class HelloSayer:
 # Cell
 
 class Scan:
-    """Represents a medical imaging single 3D volume:
+    """Represents a medical imaging single 3D volume.
 
     Attributes:
-        title: str of the volume identifier e.g "LUNG"
-        dcm_series: a series of DCM files representing the volume
-        vol: the three dimensional array
-        pix_dim: The pixel dimensions of the volume
-        affine: the affine of the volume
-
+        title: str
     """
 
     def __init__(self, title, dcm_series):
