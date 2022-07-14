@@ -22,3 +22,14 @@ Fill me in please! Don't forget code examples:
     2
 
 
+
+```python
+20+20
+```
+
+
+
+
+    40
+
+
