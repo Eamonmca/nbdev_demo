@@ -50,24 +50,3 @@ class Scan:
         nibabel.save(nifti_file, output_path)
 
         return output_path
-
-    def display_3D_volume(self, fig=False):
-
-        if utils.is_notebook:
-            pio.renderers.default = 'notebook_connected'
-
-        img = self.vol
-        fig = px.imshow(img, animation_frame=0, binary_string=True, labels=dict(animation_frame="slice"), title= "CT_SCAN",)
-        fig.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 50
-
-
-
-        if fig :
-            return fig
-        else:
-            return fig.show()
-
-
-
-    def __repr__(self):
-        return f"Scan Object titled {self.title}, with dimensions {self.vol.shape}"
